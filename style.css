@@ -119,7 +119,17 @@
 /* ------------------------ */
 .ex-10-icon {
     font-size: 60px;
+    animation: spinner 2s linear infinite;
 }
+
+@keyframes spinner{
+
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/* -------------- */
 .ex-11-icon {
     font-size: 60px;
 }
