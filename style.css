@@ -154,6 +154,11 @@
 }
 
 /* ----------------- */
+
+.well {
+
+    overflow: hidden;
+}
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -166,6 +171,7 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
+    
 }
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
@@ -230,3 +236,97 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-13-button:hover .ex-13-top-white {
+
+    animation: space_top_13 5s linear infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+
+    animation: space_bottom_13 5s linear infinite;
+}
+
+@keyframes space_top_13 {
+
+    0% {
+
+    top: -10px;
+    left: 10%;
+    }
+
+    15% {
+
+    top: -10px;
+    left: 100%;
+    }
+
+
+    40% {
+
+    top: 60px;
+    left: 100%;
+    }
+
+    60% {
+
+    top: 60px;
+    left: -10%;
+    }
+
+    90% {
+
+    top: -10px;
+    left: -10%;
+        }
+
+
+    100% {
+
+    top: -10px;
+    left: 10%;
+    }
+}
+
+@keyframes space_bottom_13 {
+
+    0% {
+
+        bottom: -10px;
+        right: 20%;
+    }
+
+    15% {
+
+    bottom: -10px;
+    right: 100%;
+    }
+
+
+    40% {
+
+    bottom: 60px;
+    right: 100%;
+    }
+
+    60% {
+
+    bottom: 60px;
+    right: -10%;
+    }
+
+    90% {
+
+    bottom: -10px;
+    right: -10%;
+        }
+
+
+    100% {
+
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+
